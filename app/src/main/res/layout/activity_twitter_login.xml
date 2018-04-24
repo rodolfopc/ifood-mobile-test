@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".twitterLogin.TwitterLoginActivity">
+    <LinearLayout
+        android:background="@color/tw__composer_white"
+        android:gravity="center"
+        android:padding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:src="@drawable/logo_ifood"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/logo_rapiddo"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <TextView
+        android:text="@string/welcome"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/tw__composer_white"
+        android:layout_marginTop="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/before_we_start"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:padding="12dp"
+        android:textColor="@color/tw__composer_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_login"
+        android:text="@string/login"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/login_button_bg"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

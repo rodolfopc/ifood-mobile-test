@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ifood-test</string>
+    <string name="twitter_sentiment">Twitter Sentiment</string>
+
+    <string name="com.twitter.sdk.android.CONSUMER_KEY">OVVO7yem1wHmO5rwDriY6OCTI</string>
+    <string name="com.twitter.sdk.android.CONSUMER_SECRET">x2JxvIFtffpZfa2zxfCH0yQDGdG75hoO4bM0tjJQs61GPgBhJA</string>
+
+    <string name="before_we_start">Before start you need to enter with your Twitter account.</string>
+    <string name="welcome">Welcome</string>
+
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+    <!--Dialog Titles-->
+    <string name="error">Erro</string>
+    <string name="ok">OK</string>
+</resources>
