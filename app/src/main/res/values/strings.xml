@@ -11,6 +11,8 @@
     <string name="login">Login</string>
     <string name="logout">Logout</string>
 
+    <string name="sorry">Sorry, we couldn`t find any tweet from this user.</string>
+
     <!--Dialog Titles-->
     <string name="error">Erro</string>
     <string name="ok">OK</string>

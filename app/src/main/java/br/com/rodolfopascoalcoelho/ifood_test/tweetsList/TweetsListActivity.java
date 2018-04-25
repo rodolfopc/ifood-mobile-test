@@ -10,6 +10,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 
 import com.twitter.sdk.android.core.models.Tweet;
@@ -19,6 +20,7 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import br.com.rodolfopascoalcoelho.ifood_test.BaseActivity;
 import br.com.rodolfopascoalcoelho.ifood_test.R;
 import br.com.rodolfopascoalcoelho.ifood_test.twitterLogin.TwitterLoginActivity;
 import br.com.rodolfopascoalcoelho.ifood_test.view.SentimentToast;
@@ -41,6 +43,9 @@ public class TweetsListActivity extends BaseActivity implements TweetsListContra
 
     @BindView(R.id.text_user_name)
     EditText text_user_name;
+
+    @BindView(R.id.empty_state_view)
+    LinearLayout empty_state_view;
 
     List<Tweet> tweets = new ArrayList<>();
     TweetsListAdapter adapter;
@@ -103,7 +108,7 @@ public class TweetsListActivity extends BaseActivity implements TweetsListContra
         tweets.clear();
         tweets.addAll(items);
         adapter.notifyDataSetChanged();
-
+        showView(list_view);
     }
 
     @Override
@@ -111,6 +116,18 @@ public class TweetsListActivity extends BaseActivity implements TweetsListContra
         Intent intent = new Intent(getApplicationContext(), TwitterLoginActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+    }
+
+    @Override
+    public void showEmptyView() {
+        showView(empty_state_view);
+    }
+
+    private void showView(View view){
+        this.empty_state_view.setVisibility(View.GONE);
+        this.list_view.setVisibility(View.GONE);
+
+        view.setVisibility(View.VISIBLE);
     }
 
 

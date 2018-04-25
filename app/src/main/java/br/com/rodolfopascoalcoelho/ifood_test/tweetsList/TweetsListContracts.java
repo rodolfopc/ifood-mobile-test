@@ -18,6 +18,8 @@ public interface TweetsListContracts {
         void logoutSuccess();
 
         void showLoader(final boolean isShow);
+
+        void showEmptyView();
     }
 
     interface TweetsListPresenter {

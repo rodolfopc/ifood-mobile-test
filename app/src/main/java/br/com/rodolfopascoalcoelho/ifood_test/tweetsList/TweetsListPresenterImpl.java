@@ -85,7 +85,11 @@ public class TweetsListPresenterImpl implements TweetsListContracts.TweetsListPr
     @Override
     public void fetchTweets(List<Tweet> items) {
         tweetsListView.showLoader(false);
-        tweetsListView.fetchUserTweets(items);
+        if(items.size()>0) {
+            tweetsListView.fetchUserTweets(items);
+        }else{
+            tweetsListView.showEmptyView();
+        }
     }
 
     @Override

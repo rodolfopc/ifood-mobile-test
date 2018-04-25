@@ -6,7 +6,7 @@ import android.os.Bundle;
 import javax.inject.Inject;
 
 import br.com.rodolfopascoalcoelho.ifood_test.R;
-import br.com.rodolfopascoalcoelho.ifood_test.tweetsList.BaseActivity;
+import br.com.rodolfopascoalcoelho.ifood_test.BaseActivity;
 import br.com.rodolfopascoalcoelho.ifood_test.tweetsList.TweetsListActivity;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
